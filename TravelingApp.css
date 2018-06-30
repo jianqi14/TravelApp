@@ -5,3 +5,9 @@
     font-size: 24px;
     padding: 25px;
 }
+.parallax{
+    background: url('PHOTOS FOR TRAVELAPP/SF low light view from top.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
