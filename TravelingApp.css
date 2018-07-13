@@ -5,7 +5,7 @@ body{
 .container{
     max-width: 960px;
     margin: 0 auto;
-    background: #b49090;
+    background: #7c9982;
     font-size: 24px;
     padding: 25px;
 }
@@ -31,9 +31,9 @@ body{
 }
 
 .parallax h2{
-    text-align: center;
+    text-anchor: middle;
     font-family: helvetica;
-    color: rgb(128,0,0);
+    color: rgb(179, 161, 59);
  
 }
 
