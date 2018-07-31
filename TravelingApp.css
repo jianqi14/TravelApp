@@ -10,30 +10,17 @@ body{
     padding: 25px;
 }
 
-.container h3{
-    color: rgb(128,0,0);
-    text-align: center;
-    font-family: helvetica;
-    font-size: 120%;
-}
-
-.container p {
-    color: rgb(128,0,0);
-    text-align: center;
-    font-family: helvetica;
-}
-
 .parallax{
     background: url('https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg') no-repeat center;
     background-size: cover;
     background-attachment: fixed;
-    height: 319px;
+    height: 520px;
 }
 
-.parallax h2{
-    text-anchor: middle;
-    font-family: helvetica;
-    color: rgb(179, 161, 59);
- 
+.parallax h3{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 400px;
+    color: sienna;
 }
 
