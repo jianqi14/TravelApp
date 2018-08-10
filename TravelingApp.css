@@ -10,6 +10,32 @@ body{
     padding: 25px;
 }
 
+.display-4{
+    text-align: center;
+}
+.lead{
+    text-align: center;
+}
+
+.list-view{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+}
+.list-view h4{
+    background-color: slategray;
+    padding: 1px 0;
+    color: rgb(128, 196, 196);
+    display: inline;
+    margin: 1; 
+
+}
+
+.detail-view{
+    text-align: center;
+}
+
+
 .parallax{
     background: url('https://cdn.vox-cdn.com/thumbor/RVhobHgNC4xy7NSqXvVs13OdJIk=/0x0:4000x4000/1200x800/filters:focal(1680x1680:2320x2320)/cdn.vox-cdn.com/uploads/chorus_image/image/55649931/IM_Photo5.0.jpg') no-repeat center;
     background-size: cover;
