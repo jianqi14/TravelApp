@@ -13,7 +13,8 @@ var api_key = 'keyaK6MUiRbQVk9Di';
 
 var listView = function(id, photos, name){
   return `
-  <div class="card img-fluid" style="width:500px">
+  <div class="col-sm-6">
+  <div class="card img-fluid">
     <img class="card-img-top" src="${photos}" alt="Card image" style="width:100%">
     <div class="card-img-overlay">
       <h4 class="card-title">${name}</h4>
@@ -29,6 +30,7 @@ var getDataForList = function(){
   //This is where we get the JSON data from Airtable!
   $.getJSON( `https://api.airtable.com/v0/appWNP5SS9OqdZq7D/Table%201?api_key=keyaK6MUiRbQVk9Di&view=Alpha`, function(data) {
     var items = [];
+    items.push(`<div class="row">`);
     $.each(data.records, function(index, val ){
         //console.log(val.fields)
         var id = val.id;
@@ -39,6 +41,7 @@ var getDataForList = function(){
         items.push(html);
 
     });
+    items.push(`</div>`);
     $(".list-view").append(items.join(''));
   });
 }
@@ -93,4 +96,3 @@ if (id) {
 } else {
   getDataForList();
 }
-
