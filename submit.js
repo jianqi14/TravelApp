@@ -4,7 +4,11 @@ $("#submit-location").on('submit', function(e){
   data.fields = {
     'Name': $(this).find('#Name').val(),
     'Address': $(this).find('#Address').val(),
-    'yelpReviews': $(this).find('#yelpReviews').val(),
+    'yelpReviews':[
+      {
+        'yelpReviews': $(this).find('#yelpReviews').val(),
+      }
+    ],
     'Description': $(this).find('#Description').val(),
     'Price': $(this).find('#Price').val(),
     'Photos': [
@@ -12,9 +16,6 @@ $("#submit-location").on('submit', function(e){
         'url': $(this).find('#Photos').val()
       }
     ],
-    'Rating': $(this).find('#Rating').val(),
-    'Rating': $(this).find('#Rating').val(),
-    'Cost': $(this).find('#Cost').val(),
   };
   $.post(`https://api.airtable.com/v0/appWNP5SS9OqdZq7D/Table%201?api_key=keyaK6MUiRbQVk9Di&view=Alpha`,
     data, function () {
