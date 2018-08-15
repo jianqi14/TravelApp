@@ -56,7 +56,7 @@ var detailView = function(id, Photos, name, Description, address, YelpReview, Pr
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <p>${Description}</p><br>
-      <a class="btn btn-primary btn-lg" href="https://jianqi14.github.io/TravelApp/" role="button"><i>Back to Home Page</i></a>
+      <a class="btn btn-primary btn-lg" href="https://jianqi14.github.io/TravelApp/" role="button"><i>Return to Home Page</i></a>
     </blockquote>
   </div>
 </div><br>
