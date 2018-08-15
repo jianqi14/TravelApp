@@ -49,11 +49,24 @@ var getDataForList = function(){
 // Template that generates HTML for one item in our detail view, given the parameters passed in
 var detailView = function(id, Photos, name, Description, address, YelpReview, Price) {
   return `
+  <div class="card">
+  <div class="card-header">
+    About
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>${Description}</p><br>
+      <a class="btn btn-primary btn-lg" href="https://jianqi14.github.io/TravelApp/" role="button"><i>Back to Home Page</i></a>
+    </blockquote>
+  </div>
+</div><br>
+
   <div class="card mb-3">
   <img class="card-img-top" src="${Photos}" alt="Card image cap">
   <div class="card-body">
-    <h3 class="card-title"><strong>${name}</strong></h3>
-    <p class="card-text">${Description}</p>
+    <h3 class="card-title"><b>${name}</b></h3>
+
+    <hr class="my-4">
     <p class="card-text"><strong>${name}'s Address:</strong> ${address}</p>
     <p class="card-text"><strong>Price:</strong> ${Price}</p>
 
