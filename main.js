@@ -59,7 +59,7 @@ var detailView = function(id, Photos, name, Description, address, Price, Yelp_Re
       <a class="btn btn-primary btn-lg" href="https://jianqi14.github.io/TravelApp/" role="button"><i>Return to Home Page</i></a>
     </blockquote>
   </div>
-</div><br>
+</div>
 
   <div class="card mb-3">
   <img class="card-img-top" src="${Photos}" alt="Card image cap">
