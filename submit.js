@@ -19,7 +19,7 @@ $("#submit-location").on('submit', function(e){
     ],
 
   };
-  $.post(`https://api.airtable.com/v0/appWNP5SS9OqdZq7D/Table%201?api_key=keyaK6MUiRbQVk9Di&view=Alpha`,
+  $.post(`https://api.airtable.com/v0/appWNP5SS9OqdZq7D/Table%201?api_key=keyaK6MUiRbQVk9Di`,
     data, function () {
       // On Success
       $("#submit-location").html(`<h2>Thanks for submitting!</h2>`);
