@@ -67,7 +67,8 @@ var detailView = function(id, Photos, name, Description, address, Price, Yelp_Re
     <h3 class="card-title"><b>${name}</b></h3>
     <hr class="my-4">
     <p class="card-text"><strong>${name}'s Address:</strong> ${address}</p>
-    <p class="card-text"><strong>Price:</strong> ${Price}</p>yelpReview
+    <p class="card-text"><strong>Price:</strong> ${Price}</p>
+
     <a class="btn btn-primary btn-lg" href="${Yelp_Review}" role="button"> Yelp Review</a>
     <a class="btn btn-primary btn-lg" href="https://www.google.com/maps/search/${name} ${address}" role="button"> Google Maps </a>
   </div>`;
