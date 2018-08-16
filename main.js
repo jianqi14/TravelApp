@@ -47,7 +47,7 @@ var getDataForList = function(){
 }
 
 // Template that generates HTML for one item in our detail view, given the parameters passed in
-var detailView = function(id, Photos, name, Description, address, Price) {
+var detailView = function(id, Photos, name, Description, address, Price, Yelp_Review) {
   return `
   <div class="card">
   <div class="card-header">
@@ -65,11 +65,10 @@ var detailView = function(id, Photos, name, Description, address, Price) {
   <img class="card-img-top" src="${Photos}" alt="Card image cap">
   <div class="card-body">
     <h3 class="card-title"><b>${name}</b></h3>
-
     <hr class="my-4">
     <p class="card-text"><strong>${name}'s Address:</strong> ${address}</p>
-    <p class="card-text"><strong>Price:</strong> ${Price}</p>
-
+    <p class="card-text"><strong>Price:</strong> ${Price}</p>yelpReview
+    <a class="btn btn-primary btn-lg" href="${Yelp_Review}" role="button"> Yelp Review</a>
     <a class="btn btn-primary btn-lg" href="https://www.google.com/maps/search/${name} ${address}" role="button"> Google Maps </a>
   </div>`;
 }
@@ -87,9 +86,10 @@ var getDataForId = function(id) {
       var Photos = fields["Photos"] ? fields["Photos"][0].url : '';
       var Description = fields["Description"];
       var address = fields["Address"];
+      var Yelp_Review = fields["yelpReview"]
       var Price = fields["Prices"];
 
-      var itemHTML = detailView(id, Photos, name, Description, address, Price);
+      var itemHTML = detailView(id, Photos, name, Description, address, Price, Yelp_Review);
       html.push(itemHTML);
     html.push(`</div>`);
     $(".detail-view").append(html.join(""));
