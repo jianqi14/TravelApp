@@ -4,13 +4,8 @@ $("#submit-location").on('submit', function(e){
   data.fields = {
     'Name': $(this).find('#Name').val(),
     'Address': $(this).find('#Address').val(),
-    'yelpReviews':[
-      {
-        'yelpReviews': $(this).find('#yelpReviews').val(),
-      }
-    ],
     'Description': $(this).find('#Description').val(),
-    'Price': $(this).find('#Price').val(),
+    'Prices': $(this).find('#Prices').val(),
     'Photos': [
       {
         'url': $(this).find('#Photos').val()
